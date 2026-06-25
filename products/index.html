@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch Example</title>
+</head>
+<body>
+
+<script>
+async function getProducts() {
+    const output = await fetch("https://fakestoreapi.com/products")
+    const productOutput = await output.json()
+
+    console.log(productOutput)
+}
+
+getProducts()
+
+console.log("hi")
+console.log("welcome")
+</script>
+
+</body>
+</html>
